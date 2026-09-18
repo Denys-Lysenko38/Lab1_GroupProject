@@ -1,2 +1,4 @@
 ﻿  main.cpp
+  student_b.cpp
+C:\0_Projects\Prog\labs\ML\Lab1_GroupProject\student_b.cpp(9,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Lab1_GroupProject.vcxproj -> C:\0_Projects\Prog\labs\ML\Lab1_GroupProject\x64\Debug\Lab1_GroupProject.exe

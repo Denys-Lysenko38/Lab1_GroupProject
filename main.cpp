@@ -1,11 +1,24 @@
 #include <vector>
 #include "student_b.h"
+#include <tuple>
+#include <iostream>
 
 int main() {
-    
-    std::shared_ptr<InputData> inptB = std::make_shared<InputData>();
 
-    calculateB(inptB);
+    auto data = std::make_shared<InputData>();
+
+    data->x = { 1, 2, 3, 4, 5 };
+    data->y = { 2.1, 4.2, 5.8, 8.1, 9.9 };
+
+    std::unique_ptr<Result> resultB = calculateB(data);
+    auto [valueB1, valueB2, valueB3] = std::move(*resultB);
+
+    std::cout << valueB1;
+    std::cout << "\n";
+    std::cout << valueB2;
+    std::cout << "\n";
+    std::cout << valueB3;
 
     return 0;
+
 }
