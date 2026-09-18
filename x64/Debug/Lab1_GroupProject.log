@@ -1,6 +1,0 @@
-﻿  main.cpp
-  student_a.cpp
-C:\Users\potss\source\repos\Lab1_GroupProject\Lab1_GroupProject\student_a.cpp(7,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  student_b.cpp
-  Generating Code...
-  Lab1_GroupProject.vcxproj -> C:\Users\potss\source\repos\Lab1_GroupProject\x64\Debug\Lab1_GroupProject.exe
