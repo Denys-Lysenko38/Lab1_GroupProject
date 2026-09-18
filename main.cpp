@@ -6,12 +6,12 @@
 
 int main() {
     
-    auto dataA = std::make_shared<InputData>();
+    auto data = std::make_shared<InputData>();
 
-    dataA->x = { 1, 2, 3, 4, 5 };
-    dataA->y = { 2.1, 4.2, 5.8, 8.1, 9.9 };
+    data->x = { 1, 2, 3, 4, 5 };
+    data->y = { 2.1, 4.2, 5.8, 8.1, 9.9 };
 
-    std::unique_ptr<Result> resultA = calculateA(dataA);
+    std::unique_ptr<Result> resultA = calculateA(data);
     auto [valueA1, valueA2, valueA3] = std::move(*resultA);
 
     std::cout << valueA1;
@@ -19,12 +19,7 @@ int main() {
     std::cout << valueA2;
     std::cout << "\n";
 
-    auto dataB = std::make_shared<InputData>();
-
-    dataB->x = { 1, 2, 3, 4, 5 };
-    dataB->y = { 2.1, 4.2, 5.8, 8.1, 9.9 };
-
-    std::unique_ptr<Result> resultB = calculateB(dataB);
+    std::unique_ptr<Result> resultB = calculateB(data);
     auto [valueB1, valueB2, valueB3] = std::move(*resultB);
 
     std::cout << valueB1;
