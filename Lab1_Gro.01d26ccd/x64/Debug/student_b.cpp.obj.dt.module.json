@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Lab1_Gro.01d26ccd\\x64\\Debug\\student_b.obj",
+            "outputs": [
+                "Lab1_Gro.01d26ccd\\x64\\Debug\\student_b.cpp.obj.dt.module.json",
+                "Lab1_Gro.01d26ccd\\x64\\Debug\\student_b.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
